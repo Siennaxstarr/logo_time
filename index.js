@@ -51,5 +51,16 @@ function start() {
 
 
     })
+    const fs = require('fs');
+
+const svgString = `<svg height="210" width="500">
+    <text x="0" y="15" fill="blue">sky</text>
+</svg>`;
+
+// Save the SVG string to a file
+fs.writeFileSync('logo.svg', svgString);
+
+console.log('Logo created successfully!');
+
 }
 start()
